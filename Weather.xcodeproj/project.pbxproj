@@ -15,6 +15,10 @@
 		8CAFBB0A28AD0BD300E91C26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CAFBB0828AD0BD300E91C26 /* LaunchScreen.storyboard */; };
 		8CAFBB1228AD0CA900E91C26 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 8CAFBB1128AD0CA900E91C26 /* .gitignore */; };
 		8CAFBB1428AD0CDF00E91C26 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAFBB1328AD0CDF00E91C26 /* APIKey.swift */; };
+		8CAFBB1628AD0D5D00E91C26 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAFBB1528AD0D5D00E91C26 /* WeatherViewController.swift */; };
+		8CAFBB1928AD0D9500E91C26 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8CAFBB1828AD0D9500E91C26 /* Alamofire */; };
+		8CAFBB1C28AD0DA200E91C26 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 8CAFBB1B28AD0DA200E91C26 /* SwiftyJSON */; };
+		8CAFBB1F28AD19F300E91C26 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 8CAFBB1E28AD19F300E91C26 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,7 @@
 		8CAFBB0B28AD0BD300E91C26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CAFBB1128AD0CA900E91C26 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		8CAFBB1328AD0CDF00E91C26 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		8CAFBB1528AD0D5D00E91C26 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +40,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CAFBB1F28AD19F300E91C26 /* Kingfisher in Frameworks */,
+				8CAFBB1C28AD0DA200E91C26 /* SwiftyJSON in Frameworks */,
+				8CAFBB1928AD0D9500E91C26 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +77,7 @@
 				8CAFBB0828AD0BD300E91C26 /* LaunchScreen.storyboard */,
 				8CAFBB0B28AD0BD300E91C26 /* Info.plist */,
 				8CAFBB1328AD0CDF00E91C26 /* APIKey.swift */,
+				8CAFBB1528AD0D5D00E91C26 /* WeatherViewController.swift */,
 			);
 			path = Weather;
 			sourceTree = "<group>";
@@ -89,6 +98,11 @@
 			dependencies = (
 			);
 			name = Weather;
+			packageProductDependencies = (
+				8CAFBB1828AD0D9500E91C26 /* Alamofire */,
+				8CAFBB1B28AD0DA200E91C26 /* SwiftyJSON */,
+				8CAFBB1E28AD19F300E91C26 /* Kingfisher */,
+			);
 			productName = Weather;
 			productReference = 8CAFBAFA28AD0BD100E91C26 /* Weather.app */;
 			productType = "com.apple.product-type.application";
@@ -117,6 +131,11 @@
 				Base,
 			);
 			mainGroup = 8CAFBAF128AD0BD100E91C26;
+			packageReferences = (
+				8CAFBB1728AD0D9500E91C26 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				8CAFBB1A28AD0DA200E91C26 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				8CAFBB1D28AD19F300E91C26 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 8CAFBAFB28AD0BD100E91C26 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -146,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CAFBB0228AD0BD100E91C26 /* ViewController.swift in Sources */,
+				8CAFBB1628AD0D5D00E91C26 /* WeatherViewController.swift in Sources */,
 				8CAFBAFE28AD0BD100E91C26 /* AppDelegate.swift in Sources */,
 				8CAFBB1428AD0CDF00E91C26 /* APIKey.swift in Sources */,
 				8CAFBB0028AD0BD100E91C26 /* SceneDelegate.swift in Sources */,
@@ -366,6 +386,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8CAFBB1728AD0D9500E91C26 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		8CAFBB1A28AD0DA200E91C26 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		8CAFBB1D28AD19F300E91C26 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8CAFBB1828AD0D9500E91C26 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8CAFBB1728AD0D9500E91C26 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		8CAFBB1B28AD0DA200E91C26 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8CAFBB1A28AD0DA200E91C26 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		8CAFBB1E28AD19F300E91C26 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8CAFBB1D28AD19F300E91C26 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8CAFBAF228AD0BD100E91C26 /* Project object */;
 }
